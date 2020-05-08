@@ -3569,7 +3569,6 @@ class Index(IndexOpsMixin, PandasObject):
                 return multi_join_idx, lidx, ridx
             else:
                 return multi_join_idx
-
         jl = list(overlap)[0]
 
         # Case where only one index is multi
