@@ -104,12 +104,9 @@ def test_join_multi_wrong_order():
     assert lidx is None
     tm.assert_numpy_array_equal(ridx, exp_ridx)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> BUG: (#34074) Added test and documentation
 def test_join_multi_return_indexers():
     # GH 34074
+
 
     midx1 = pd.MultiIndex.from_product([[1, 2], [3, 4], [5, 6]], names=["a", "b", "c"])
     midx2 = pd.MultiIndex.from_product([[1, 2], [3, 4]], names=["a", "b"])
